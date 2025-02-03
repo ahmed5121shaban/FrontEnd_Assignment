@@ -1,0 +1,83 @@
+<div class="bg-white p-3 rounded-md flex justify-between align-middle">
+  <div class="flex">
+    <div class="i-con bg-blue-100 px-2 py-0 rounded-md text-blue-400 font-semibold text-xl">#</div>
+    <div class="ms-3 font-semibold">عرض الرقم</div>
+  </div>
+  <div class="i-con bg-gray-200 px-3 py-2 rounded-md text-gray-800 font-semibold text-xs hover:text-red-600 cursor-pointer">X</div>
+</div>
+
+<div class="bg-white p-3 rounded-md mt-3 m-auto relative containers">
+  <div class="flex justify-between items-center">
+    <div class="flex align-middle">
+      <div class="i-con p-2 text-xl font-bold">{{ data?.number }}</div>
+      <div class="btn ms-3 font-semibold cursor-pointer py-2 px-4 rounded-md text-white">
+        {{ data?.status }}
+      </div>
+    </div>
+    <div class="i-con text-gray-800 font-semibold text-4xl me-3 cursor-pointer hover:text-blue-500" (mouseover)="dropDownShaw(dropDown)" (mouseout)="dropDownHide(dropDown)">
+      <span class="">...</span>
+    </div>
+    <div #dropDown class="shadow rounded-md p-3 bg-white border-solid border w-32 absolute top-14 left-7 hidden z-10">
+      <div class="flex items-center justify-evenly">
+        <i class="fa fa-pen"></i>
+        <p>تعديل الرقم</p>
+      </div>
+      <div class="flex items-center justify-evenly text-red-500 mt-2">
+        <img src="link-horizontal-slash.svg" alt="">
+        <p>الغاء التعيين</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-5">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-10 text-center">
+      <div class="relative flex flex-col items-center">
+        <p class="opacity-60">اسم البروتوكول</p>
+        <p>{{ data?.protocol }}</p>
+      </div>
+      <div class="relative flex flex-col items-center before:content-[''] before:absolute before:top-0 before:left-0 lg:before:left-auto lg:before:right-0 before:w-[2px] before:h-full before:bg-gray-300 before:opacity-50 before:hidden lg:before:block">
+        <p class="opacity-60">الدولة</p>
+        <p class="flex items-center">
+          <img src="contents.png" class="rounded-full me-1 w-5 h-5" alt="" />
+          {{ data?.country }}
+        </p>
+      </div>
+      <div class="relative flex flex-col items-center before:content-[''] before:absolute before:top-0 before:left-0 lg:before:left-auto lg:before:right-0 before:w-[2px] before:h-full before:bg-gray-300 before:opacity-50 before:hidden lg:before:block">
+        <p class="opacity-60">العميل الحالي</p>
+        <p class="flex items-center" (mouseover)="dropDownShaw(tooltip)" (mouseout)="dropDownHide(tooltip)">
+          <img src="contents.png" class="rounded-full me-1 w-5 h-5" alt="" />
+          {{ data.currentClient|shortText:20 }}
+        </p>
+        <div #tooltip class="shadow border border-solid contain-content absolute px-2 rounded-md z-10 bg-white hidden">
+          {{ data?.currentClient }}
+        </div>
+      </div>
+      <div class="relative flex flex-col items-center before:content-[''] before:absolute before:top-0 before:left-0 lg:before:left-auto lg:before:right-0 before:w-[2px] before:h-full before:bg-gray-300 before:opacity-50 before:hidden lg:before:block">
+        <p class="opacity-60">عدد الامتدادات</p>
+        <p>{{ data?.extensions }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-5">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-10 text-center">
+      <div class="relative flex flex-col items-center">
+        <p class="opacity-60">تاريخ آخر شحنة</p>
+        <p>{{ data?.lastShipmentDate }}</p>
+      </div>
+      <div class="relative flex flex-col items-center before:content-[''] before:absolute before:top-0 before:left-0 lg:before:left-auto lg:before:right-0 before:w-[2px] before:h-full before:bg-gray-300 before:opacity-50 before:hidden lg:before:block">
+        <p class="opacity-60">الرصيد الحالي</p>
+        <p>{{ data?.currentBalance }} <span>ج.م</span></p>
+      </div>
+      <div class="relative flex flex-col items-center before:content-[''] before:absolute before:top-0 before:left-0 lg:before:left-auto lg:before:right-0 before:w-[2px] before:h-full before:bg-gray-300 before:opacity-50 before:hidden lg:before:block">
+        <p class="opacity-60">الرصيد المستخدم للعميل الحالي</p>
+        <p>{{ data?.clientBalance }} <span>ج.م</span></p>
+      </div>
+      <div class="relative flex flex-col items-center before:content-[''] before:absolute before:top-0 before:left-0 lg:before:left-auto lg:before:right-0 before:w-[2px] before:h-full before:bg-gray-300 before:opacity-50 before:hidden lg:before:block">
+        <p class="opacity-60">الرصيد المستخدم للرقم ككل</p>
+        <p>{{ data?.totalBalance }} <span>ج.م</span></p>
+      </div>
+    </div>
+  </div>
+
+</div>

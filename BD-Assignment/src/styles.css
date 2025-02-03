@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'Neo Sans Arabic';
+  src: url('assets/fonts/alfont_com_NeoSansArabic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body{
+  font-family: 'Neo Sans Arabic';
+}
+
+.containers{
+  width: 98%;
+}
+
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .container {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.btn:hover
+{
+  color: #79b3a6;
+  border: 1px solid #48b29a;
+  background-color: white;
+}
+
+.btn
+{
+  border: 1px solid #48b29a;
+  background-color: #48b29a;
+}

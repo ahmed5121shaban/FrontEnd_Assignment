@@ -1,0 +1,105 @@
+{
+  "number": "012345678910",
+  "status": "قيد الاستخدام",
+  "protocol": "فودافون مصر",
+  "country": "المملكة العربية الهاشمية",
+  "currentClient": "الشركة الالمانية للابادة",
+  "extensions": "09",
+  "lastShipmentDate": "2024/12/29",
+  "currentBalance": "5000",
+  "clientBalance": "5000",
+  "totalBalance": "5000",
+  "createdBy": "عبدالرحمن اسماعيل ناصف",
+  "clients": [
+    {
+      "name": "الشركة الألمانية للإبادة...",
+      "assignDate": "01/12/2024",
+      "unassignDate": "-",
+      "assigner": "عبدالرحيم إسماعيل ناصف",
+      "localMinutes": "7654",
+      "internationalMinutes": "122",
+      "amount": "61890 جم"
+    },
+    {
+      "name": "الشركة الألمانية للإبادة...",
+      "assignDate": "01/12/2024",
+      "unassignDate": "01/12/2024",
+      "assigner": "عبدالرحيم إسماعيل ناصف",
+      "localMinutes": "7654",
+      "internationalMinutes": "122",
+      "amount": "61890 جم"
+    },
+    {
+      "name": "الشركة الألمانية للإبادة...",
+      "assignDate": "01/12/2024",
+      "unassignDate": "01/12/2024",
+      "assigner": "عبدالرحيم إسماعيل ناصف",
+      "localMinutes": "7654",
+      "internationalMinutes": "122",
+      "amount": "61890 جم"
+    },
+    {
+      "name": "الشركة الألمانية للإبادة...",
+      "assignDate": "01/12/2024",
+      "unassignDate": "01/12/2024",
+      "assigner": "عبدالرحيم إسماعيل ناصف",
+      "localMinutes": "7654",
+      "internationalMinutes": "122",
+      "amount": "61890 جم"
+    },
+    {
+      "name": "الشركة الألمانية للإبادة...",
+      "assignDate": "01/12/2024",
+      "unassignDate": "01/12/2024",
+      "assigner": "عبدالرحيم إسماعيل ناصف",
+      "localMinutes": "7654",
+      "internationalMinutes": "122",
+      "amount": "61890 جم"
+    },
+    {
+      "name": "الشركة الألمانية للإبادة...",
+      "assignDate": "01/12/2024",
+      "unassignDate": "01/12/2024",
+      "assigner": "عبدالرحيم إسماعيل ناصف",
+      "localMinutes": "7654",
+      "internationalMinutes": "122",
+      "amount": "61890 جم"
+    },
+    {
+      "name": "الشركة الألمانية للإبادة...",
+      "assignDate": "01/12/2024",
+      "unassignDate": "01/12/2024",
+      "assigner": "عبدالرحيم إسماعيل ناصف",
+      "localMinutes": "7654",
+      "internationalMinutes": "122",
+      "amount": "61890 جم"
+    },
+    {
+      "name": "الشركة الألمانية للإبادة...",
+      "assignDate": "01/12/2024",
+      "unassignDate": "01/12/2024",
+      "assigner": "عبدالرحيم إسماعيل ناصف",
+      "localMinutes": "7654",
+      "internationalMinutes": "122",
+      "amount": "61890 جم"
+    },
+    {
+      "name": "الشركة الألمانية للإبادة...",
+      "assignDate": "01/12/2024",
+      "unassignDate": "01/12/2024",
+      "assigner": "عبدالرحيم إسماعيل ناصف",
+      "localMinutes": "7654",
+      "internationalMinutes": "122",
+      "amount": "61890 جم"
+    },
+    {
+      "name": "الشركة الألمانية للإبادة...",
+      "assignDate": "01/12/2024",
+      "unassignDate": "01/12/2024",
+      "assigner": "عبدالرحيم إسماعيل ناصف",
+      "localMinutes": "7654",
+      "internationalMinutes": "122",
+      "amount": "61890 جم"
+    }
+  ]
+}
